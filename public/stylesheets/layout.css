@@ -1,0 +1,142 @@
+/*
+Background #d13100;
+OnBackgroundHOVER #781415;
+LightGray #e9e9e9;
+*/
+
+body{
+    height: auto;
+    margin: 0;
+    font-family: "Open Sans";
+}
+.pageWidth{
+    min-width: 600px;
+    max-width: 100%;
+}
+.scrBorder{
+    padding: 0 5px;
+}
+.wrap{
+    min-width: 600px;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.wrap.middle{
+    padding-top: 1%;
+    padding-bottom: 2%;
+    min-height: 800px;
+}
+
+header.ofBody{
+    color: white;
+    height: 50px;
+    padding: 10px;
+    background: #d13100;
+    font-family: "Open Sans Light";
+    overflow: hidden;
+    box-shadow: 0 2px 7px gray;
+    border-bottom: rgba(255, 64, 0, 0.49) solid 1px;
+
+}
+    #introToLog, #serviceFace, #loginBox{
+        height: 50px;
+    }
+    #serviceFace{
+        padding: 15px;
+    }
+    #loginBox{
+        float: right;
+        width: 60%;
+        display: block;
+        box-sizing: border-box;
+        padding: 8px 0;
+        text-align: right;
+        font-size: 1.2em;
+        display: none;
+    }
+    #loginBox input{
+        width: 20%;
+        margin: 0 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        border: 1px solid lightgray;
+        font-size: 0.7em;
+        position: relative;
+        bottom: 1px;
+        text-align: center;
+    }
+    #loginBox input:focus, #loginBox input:hover{
+        border: 1px solid darkred;
+        background: #e9e9e9;
+    }
+    #loginBox button{
+        border-radius: 7px;
+        border: 1px solid lightgray;
+        background: white;
+        position: relative;
+        bottom: 1px;
+    }
+    #loginBox button:hover{
+        border: 1px solid #781415;
+        background: lightgray;
+        color: #781415;
+    }
+
+footer.ofBody{
+    height: auto;
+    padding: 10px;
+    background: #d13100;
+    clear: both;
+    box-shadow: 0 -1px 5px gray;
+    text-align: center;
+    padding: 2em;
+    line-height: 1em;
+    font-size: 0.8em;
+    color: white;
+}
+footer.ofBody span{
+    font-family: "Open Sans Semibold";
+}
+    #serviceFace{
+        width: auto;
+        float: left;
+    }
+    #serviceFace span{
+        font-size: 2em;
+        position: relative;
+        bottom: 13px;
+        left: 10px;
+    }
+    #introToLog{
+        width: auto;
+        float: right;
+        font-size: 1.1em;
+        overflow: hidden;
+        padding-right: 10px;
+    }
+    #links{
+        margin: 6% 0;}
+#links a, #links a:visited{
+    text-decoration: none;
+    color:white;
+}
+    #links a:hover{
+        color: #781415;}
+
+
+
+.pointer{
+    cursor: pointer;
+}
+.borderRound{
+    border-radius: 10px;
+    border: 1px #e9e9e9 solid;
+    box-shadow: 1px 1px 7px gray;
+}
+.linkWhite, .linkWhite:visited{
+    text-decoration: none;
+    color: white;
+}
+
+

@@ -1,0 +1,25 @@
+extends layout
+block head
+    link(rel='stylesheet', href='./stylesheets/register.css')
+block main
+    main.ofBody.register.borderRound
+        form#register(method='post')
+            fieldset
+                legend Formularz
+                span Login:&nbsp
+                input#Login(name='Login')
+                br
+                span hasło:&nbsp
+                input#Password(type='password', name='Password')
+                br
+                span powtórz hasło:&nbsp
+                input#Password2(type='password', name='Password2')
+                br
+                span e-mail:&nbsp
+                input#Email(name='Email')
+                br
+                button#regButt(disabled) Zarejestruj
+                br
+                br
+                span#err= err
+    script(src='./js/register.js')

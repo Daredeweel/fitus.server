@@ -1,0 +1,21 @@
+extends layout
+block head
+    link(rel='stylesheet' href='stylesheets/index.css')
+block main
+    main.ofBody.borderRound
+        section#app.ad
+            span.text Bądź Fit  ! Zaplanuj swój posiłek już teraz w aplikacji
+            br
+            br
+            a(href='/kcal').linkRed
+                span.launch.pointer.borderRound Kcalculator
+    aside.ofBody.borderRound
+        section#ads
+            header.ofSection Oferty Fitus w okolicy:
+            article.advert
+                header.ofAd
+                    span= offerTitle
+                div.adPic
+                     img(src='../img/embed/appAdvertBg.jpg')
+                div.adDesc
+                     span= offerDesc

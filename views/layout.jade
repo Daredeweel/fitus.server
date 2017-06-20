@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title= cardTitle
+        block head
+        link(rel='stylesheet', href='/stylesheets/layout.css')
+        link(rel='stylesheet', href='/stylesheets/font/foundation-icons.css')
+        script(src='js/layout.js')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    body.pageWidth
+        header.ofBody.pageWidth
+            .scrBorder
+                .wrap
+                    #serviceFace
+                        a(href='/').linkWhite
+                            span.fi-home.pointer &nbsp
+                            span Fitus.eu
+                    #introToLog
+                        #links
+                            a.pointer(onclick='toLoginForm()') Zaloguj się
+                            span  |
+                            a.pointer(href='/register') Rejestracja
+                    form#loginBox(name='loginForm')
+                        span.fi-asterisk &nbsp&nbsp
+                        span Login:
+                        input#login(type='text')
+                        span Hasło:
+                        span
+                        input#password(type='password')
+                        button.pointer Zaloguj się
+
+        .scrBorder
+            .wrap.middle.pageWidth
+                block main
+        footer.ofBody
+            .wrap
+                p Copyright to
+                span Black Baron's Development

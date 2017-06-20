@@ -1,0 +1,24 @@
+czerwona kolorystyka.
+
+LAYOUT:
+banner LOGO | NAZWA | << LOGIN | ZAREJESTRUJ >>
+            login form wysuwany z góry - banner się chowa.
+        LOGIN - HASŁO - GUZIK ZALOGUJ / LOGIN - HASŁO - HASŁOX2 - EMAIL
+            login form wsuwa sie do góry po poprawnym zalogowaniu sie / ZAREJESTROWANIU / IKONKA LOADINGU PO LEWEJ STRONIE
+                jezeli fail komunikat chmurka o FAILU i CZERWONY X w miejscu LOADING ICON
+                jezeli zaloguje LOADING ICON zielony ptaszek //
+            wraca BANNER z
+        LOGO | NAZWA | << Obrazek | Użytkownik | Edytuj profil >>
+
+navigacja
+       | Kcalculator | Fitu |
+
+
+1. Strona Wejściowa:
+    main
+        Bądź Fit co do grama ! Zaplanuj swój posiłek już teraz w aplikacji [Kcalculator]
+    aside
+        Ogłoszenia Fitu w twoim mieście
+    footer
+        Regulamin | Współpraca | Kontakt
+            Copyright to ;Black Baron's Development;

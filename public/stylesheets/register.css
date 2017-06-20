@@ -1,0 +1,27 @@
+main.ofBody.register{
+    min-height: 1000px;
+}
+.registerResult{
+    text-align: center;
+}
+fieldset{
+    margin: 50px auto;
+    padding: 20px;
+    width: 50%;
+    border: lightgray 1px solid;
+    text-align: right;
+    line-height: 1.7em;
+}
+fieldset input{
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+fieldset button{
+    border-radius: 7px;
+    border: 1px solid gray;
+    padding: 0.2em;
+}
+#err{
+    font-family:'Open Sans Semibold';
+    color:red;
+}

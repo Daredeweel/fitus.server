@@ -1,0 +1,94 @@
+main.ofBody{
+    height: 73%;
+    width: 73%;
+    float: left;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+aside.ofBody{
+    height: auto;
+    width: 25%;
+    margin: 0;
+    overflow: hidden;
+    float: right;
+}
+header.ofSection{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px 5px;
+    background: #d13100;
+    color: white;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+section#app{
+    width: auto;
+    min-height: 600px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section#app.ad{
+    padding: 25% 4% 0;
+    background: url('../img/embed/appAdvertBg.jpg');
+    background-size: cover;
+    background-position-x: center;
+    font-size: 2em;
+    color: red;
+    font-family: "Open Sans Semibold";
+    line-height: 2em;
+}
+span.text{
+    padding: 5px 5px;
+    background: white;
+    box-shadow: 0 0 10px gray;
+}
+span.launch{
+    background: white;
+    font-size: 130%;
+    padding: 5px 10px;
+}
+span.launch:hover{
+    background: red;
+    color:white;
+    padding: 5px 10px;
+}
+
+section#ads{
+    box-sizing: border-box;
+}
+section#ads>article{
+    width:100;
+    height: auto;
+    box-sizing: border-box;
+}
+    header.ofAd{
+        text-align: center;
+        height: auto;
+        width: 100%;
+        padding: 0.1em;
+        background: red;
+        font-family: "Open Sans Light";
+    }
+    div.adPic{
+        height: 50px;
+        width: 100%;
+        overflow: hidden;
+    }
+    div.adPic>img{
+        width: 100%;
+    }
+    div.adDesc{
+        height: 200px;
+        font-size: 70%;
+        padding: 3%;
+        font-family: "Open Sans Light";
+    }
+.linkRed, .linkRed:visited{
+    text-decoration: none;
+    color: red;
+}

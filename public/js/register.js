@@ -6,32 +6,42 @@ var butt = document.getElementById('regButt');
 var registerField = document.getElementById('register');
 
 var buttTxt = butt.innerHTML;
+var minLength = 8;
 
 registerField.onkeyup = function(){
-    if(check()) butt.disabled = false;
-    else  butt.disabled = true;
-}
-
-function check(){
-    if(log.value == '' || pass1.value == '' || pass2.value == '' || email.value == '') {
+    if(isEmpty(log, pass1, pass2, email)){
+        disable(true);
         butt.innerHTML = 'Puste pola';
-        return false;
     } else {
-        if(minLength(pass1)){
-            if(pass1.value == pass2.value){
+        if(isMinLenght(pass1)){
+            if(isEqual(pass1, pass2)){
+                disable(false);
                 butt.innerHTML = buttTxt;
-                return true;
             } else {
+                disable(true);
                 butt.innerHTML = 'Hasła się nie zgadzają';
-                return false;
             }
         } else {
-            butt.innerHTML = 'Hasło minimum 8 znaków';
-            return false;
+            disable(true);
+            butt.innerHTML = 'Hasło minimum '+minLength+' znaków';
         }
-    }
-}
 
-function minLength(pass){
-    return pass.value.length >= 8;
-}
+    }
+};
+
+var isEmpty = function(fd1, fd2, fd3, fd4){
+    return (fd1.value == '' || fd2.value == '' || fd3.value == '' || fd4.value == '');
+};
+
+var isEqual = function(src1, src2){
+    return src1.value == src2.value;
+};
+
+var isMinLenght = function(str){
+    return str.value.length >= minLength;
+};
+
+var disable = function(st){
+    (st === true)? butt.disabled = true : butt.disabled = false;
+};
+

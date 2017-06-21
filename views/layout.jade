@@ -3,23 +3,23 @@ html
     head
         title= cardTitle
         block head
-        link(rel='stylesheet', href='/stylesheets/layout.css')
-        link(rel='stylesheet', href='/stylesheets/font/foundation-icons.css')
+        link(rel='stylesheet', href='/css/layout.css')
+        link(rel='stylesheet', href='/css/font/foundation-icons.css')
         script(src='js/layout.js')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    body.pageWidth
-        header.ofBody.pageWidth
-            .scrBorder
-                .wrap
+    body._pageWidth
+        header._ofBody._pageWidth
+            ._scrBorder
+                ._wrap
                     #serviceFace
-                        a(href='/').linkWhite
+                        a(href='/')._linkWhite
                             span.fi-home.pointer &nbsp
                             span Fitus.eu
                     #introToLog
                         #links
-                            a.pointer(onclick='toLoginForm()') Zaloguj się
-                            span  |
-                            a.pointer(href='/register') Rejestracja
+                            a._pointer(onclick='toLoginForm()') Zaloguj się
+                            span &nbsp|&nbsp
+                            a._pointer(href='/register') Rejestracja
                     form#loginBox(name='loginForm')
                         span.fi-asterisk &nbsp&nbsp
                         span Login:
@@ -27,12 +27,12 @@ html
                         span Hasło:
                         span
                         input#password(type='password')
-                        button.pointer Zaloguj się
+                        button._pointer Zaloguj się
 
-        .scrBorder
-            .wrap.middle.pageWidth
+        ._scrBorder
+            ._wrap._middle._pageWidth
                 block main
-        footer.ofBody
-            .wrap
+        footer._ofBody
+            ._wrap
                 p Copyright to
                 span Black Baron's Development

@@ -20,7 +20,7 @@ router.post('/', function(req, res, next){
         login: req.body.Login,
         password: req.body.Password,
         email: req.body.Email
-    }
+    };
 
     MongoClient.connect(dbURL, function(err, db) {
         assert.equal(err, null);
@@ -33,8 +33,7 @@ router.post('/', function(req, res, next){
             registerInDB(user, db, function () {
                 db.close();
             });
-            res.render('registerResult', {result: 'Zarejestrowano!'});
-
+            res.render('message', {res1: 'Zarejestrowano! Możesz się teraz zalogować.', res2: 'Aby zachować konto należy je aktywować poprzez odnośnik zawarty w wiadomości e-mail otrzymanej na podany adres e-mail. W innym przypadku konto zostanie automatycznie usunięte po 24 godzinach :)'});
         });
     });
 });
@@ -54,10 +53,6 @@ var isInDB = function(obj, db, isIt, isItNot){
         if(res) isIt();
         else isItNot();
         });
-};
-
-var CL = function(message){
-  console.log(message);
 };
 
 module.exports = router;

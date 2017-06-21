@@ -1,9 +1,6 @@
 main.ofBody.register{
     min-height: 1000px;
 }
-.registerResult{
-    text-align: center;
-}
 fieldset{
     margin: 50px auto;
     padding: 20px;

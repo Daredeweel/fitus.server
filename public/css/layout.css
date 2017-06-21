@@ -9,26 +9,26 @@ body{
     margin: 0;
     font-family: "Open Sans";
 }
-.pageWidth{
+._pageWidth{
     min-width: 600px;
     max-width: 100%;
 }
-.scrBorder{
+._scrBorder{
     padding: 0 5px;
 }
-.wrap{
+._wrap{
     min-width: 600px;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
-.wrap.middle{
+._wrap._middle{
     padding-top: 1%;
     padding-bottom: 2%;
     min-height: 800px;
 }
 
-header.ofBody{
+header._ofBody{
     color: white;
     height: 50px;
     padding: 10px;
@@ -48,12 +48,11 @@ header.ofBody{
     #loginBox{
         float: right;
         width: 60%;
-        display: block;
+        display: none;
         box-sizing: border-box;
         padding: 8px 0;
         text-align: right;
         font-size: 1.2em;
-        display: none;
     }
     #loginBox input{
         width: 20%;
@@ -83,9 +82,8 @@ header.ofBody{
         color: #781415;
     }
 
-footer.ofBody{
+footer._ofBody{
     height: auto;
-    padding: 10px;
     background: #d13100;
     clear: both;
     box-shadow: 0 -1px 5px gray;
@@ -95,7 +93,7 @@ footer.ofBody{
     font-size: 0.8em;
     color: white;
 }
-footer.ofBody span{
+footer._ofBody span{
     font-family: "Open Sans Semibold";
 }
     #serviceFace{
@@ -126,17 +124,21 @@ footer.ofBody span{
 
 
 
-.pointer{
+._pointer{
     cursor: pointer;
 }
-.borderRound{
+._borderRound{
     border-radius: 10px;
     border: 1px #e9e9e9 solid;
     box-shadow: 1px 1px 7px gray;
 }
-.linkWhite, .linkWhite:visited{
+._linkWhite, ._linkWhite:visited{
     text-decoration: none;
     color: white;
+}
+._linkRed, ._linkRed:visited{
+    text-decoration: none;
+    color: red;
 }
 
 

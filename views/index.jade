@@ -1,15 +1,15 @@
 extends layout
 block head
-    link(rel='stylesheet' href='stylesheets/index.css')
+    link(rel='stylesheet' href='css/index.css')
 block main
-    main.ofBody.borderRound
+    main.ofBody._borderRound
         section#app.ad
             span.text Bądź Fit  ! Zaplanuj swój posiłek już teraz w aplikacji
             br
             br
-            a(href='/kcal').linkRed
-                span.launch.pointer.borderRound Kcalculator
-    aside.ofBody.borderRound
+            a(href='/kcal')._linkRed
+                span.launch.pointer._borderRound Kcalculator
+    aside.ofBody._borderRound
         section#ads
             header.ofSection Oferty Fitus w okolicy:
             article.advert

@@ -1,0 +1,13 @@
+main.ofBody{
+    min-height: 1000px;
+    text-align: center;
+    padding: 5%;
+    font-family: "Open Sans";
+}
+.res1{
+    font-size: 2em;
+}
+.res2{
+    font-size: 1.4em;
+    color: #444444;
+}
